@@ -1,7 +1,9 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import { weatherAPI } from "../API/weatherAPI";
+import cityReducer from "./citySlice";
 
 const rootReducer = combineReducers({
+  cityReducer,
   [weatherAPI.reducerPath]: weatherAPI.reducer,
 });
 

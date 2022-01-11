@@ -1,8 +1,8 @@
-import React from "react";
+import React, { FC } from "react";
 import { weatherAPI } from "../../API/weatherAPI";
 
-const Weather = () => {
-  const { data } = weatherAPI.useGetWeatherByCityQuery("");
+const Weather: FC<{ city: string }> = ({ city }) => {
+  const { data } = weatherAPI.useGetWeatherByCityQuery(city);
 
   return (
     <section>

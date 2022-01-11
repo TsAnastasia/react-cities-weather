@@ -11,7 +11,7 @@ export const weatherAPI = createApi({
     getWeatherByCity: build.query<any, string>({
       query: (city) => ({
         url: "weather",
-        params: { q: "Kiev,ua", appid: API_KEY, units: "metric" },
+        params: { q: city, appid: API_KEY, units: "metric" },
       }),
     }),
   }),
