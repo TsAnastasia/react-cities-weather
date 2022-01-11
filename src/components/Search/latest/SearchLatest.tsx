@@ -14,13 +14,17 @@ const SearchLatest = () => {
 
   return cities.length > 0 ? (
     <ul>
-      {cities.map((item) => (
-        <ValueBox
-          key={item.id}
-          value={item.city}
-          onDelete={handleDelete(item)}
-        ></ValueBox>
-      ))}
+      {cities
+        .slice(0, 10)
+        .reverse()
+        .map((item) => (
+          <li key={item.id}>
+            <ValueBox
+              value={item.city}
+              onDelete={handleDelete(item)}
+            ></ValueBox>
+          </li>
+        ))}
     </ul>
   ) : (
     <p>latest</p>

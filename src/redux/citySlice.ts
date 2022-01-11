@@ -13,6 +13,11 @@ export const citySlice = createSlice({
       state.city = action.payload;
     },
     addLatest: (state, action: PayloadAction<{ city: string; id: string }>) => {
+      if (state.latest.some((item) => item.city === action.payload.city)) {
+        state.latest = state.latest.filter(
+          (item) => item.city !== action.payload.city
+        );
+      }
       state.latest.push(action.payload);
     },
     deleteFromLatest: (state, action: PayloadAction<string>) => {
