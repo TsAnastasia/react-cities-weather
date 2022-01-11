@@ -1,12 +1,17 @@
 import React from "react";
+import Intro from "./components/Intro/Intro";
+import Search from "./components/Search/Search";
+import Weather from "./components/Weather/Weather";
 
 const App = () => (
   <div className="App">
     <header>header</header>
     <main>
-      <h1>react city's weather</h1>
+      <Intro />
+      <Search />
+      <Weather />
     </main>
-    <footer>footern</footer>
+    <footer>footer</footer>
   </div>
 );
 
