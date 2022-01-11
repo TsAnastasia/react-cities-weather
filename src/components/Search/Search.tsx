@@ -1,6 +1,7 @@
 import React, { FormEvent } from "react";
 import { useAppDispatch } from "../../hooks/redux";
-import { setCity } from "../../redux/citySlice";
+import { addLatest, setCity } from "../../redux/citySlice";
+import SearchLatest from "./latest/SearchLatest";
 
 const Search = () => {
   const dispatch = useAppDispatch();
@@ -14,6 +15,7 @@ const Search = () => {
   const handleSearchSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     dispatch(setCity(value));
+    dispatch(addLatest({ city: value, id: Date() }));
   };
 
   const handleClear = () => setValue("");
@@ -32,6 +34,8 @@ const Search = () => {
           clear
         </button>
         <button type="submit">Find out the weather</button>
+
+        <SearchLatest />
       </form>
     </section>
   );
