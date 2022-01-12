@@ -2,11 +2,14 @@ import React, { FC } from "react";
 
 const ValueBox: FC<{
   value: string;
+  onClick: () => void;
   onDelete: () => void;
-}> = ({ value, onDelete }) => {
+}> = ({ value, onClick, onDelete }) => {
   return (
     <div>
-      <p>{value}</p>
+      <button type="button" onClick={onClick}>
+        {value}
+      </button>
       <button type="button" onClick={onDelete}>
         delete
       </button>
