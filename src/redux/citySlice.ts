@@ -1,7 +1,7 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 const initialState = {
-  city: null as string | null,
+  city: "Kiev" as string | null,
   latest: [] as { city: string; id: string }[],
 };
 
