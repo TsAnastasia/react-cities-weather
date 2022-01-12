@@ -1,0 +1,17 @@
+.app {
+  margin: 0 auto;
+
+  background: blue;
+  border-radius: 10px;
+
+  overflow: hidden;
+}
+
+.main {
+  height: 100%;
+  min-height: 450px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}

@@ -21,23 +21,21 @@ const Search = () => {
   const handleClear = () => setValue("");
 
   return (
-    <section>
-      <form onSubmit={handleSearchSubmit}>
-        <input
-          type="text"
-          name="city"
-          placeholder="Enter city"
-          value={value}
-          onChange={handleChange}
-        />
-        <button type="button" onClick={handleClear}>
-          clear
-        </button>
-        <button type="submit">Find out the weather</button>
+    <form onSubmit={handleSearchSubmit}>
+      <input
+        type="text"
+        name="city"
+        placeholder="Enter city"
+        value={value}
+        onChange={handleChange}
+      />
+      <button type="button" onClick={handleClear}>
+        clear
+      </button>
+      <button type="submit">Find out</button>
 
-        <SearchLatest />
-      </form>
-    </section>
+      <SearchLatest />
+    </form>
   );
 };
 
