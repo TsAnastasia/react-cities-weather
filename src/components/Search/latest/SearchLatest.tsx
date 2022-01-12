@@ -2,14 +2,15 @@ import React from "react";
 import { useDispatch } from "react-redux";
 import { useAppSelector } from "../../../hooks/redux";
 import { deleteFromLatest } from "../../../redux/citySlice";
+import { ICity } from "../../../types/city";
 import ValueBox from "../../ValueBox/ValueBox";
 
 const SearchLatest = () => {
   const cities = useAppSelector((state) => state.cityReducer.latest);
   const dispatch = useDispatch();
 
-  const handleDelete = (item: { city: string; id: string }) => () => {
-    dispatch(deleteFromLatest(item.id));
+  const handleDelete = (item: ICity) => () => {
+    dispatch(deleteFromLatest(item));
   };
 
   return cities.length > 0 ? (
@@ -20,7 +21,7 @@ const SearchLatest = () => {
         .map((item) => (
           <li key={item.id}>
             <ValueBox
-              value={item.city}
+              value={item.name}
               onDelete={handleDelete(item)}
             ></ValueBox>
           </li>

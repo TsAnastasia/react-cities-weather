@@ -1,8 +1,9 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { ICity } from "../types/city";
 
 const initialState = {
   city: "Kiev" as string | null,
-  latest: [] as { city: string; id: string }[],
+  latest: [] as ICity[],
 };
 
 export const citySlice = createSlice({
@@ -12,16 +13,17 @@ export const citySlice = createSlice({
     setCity: (state, action: PayloadAction<string | null>) => {
       state.city = action.payload;
     },
-    addLatest: (state, action: PayloadAction<{ city: string; id: string }>) => {
-      if (state.latest.some((item) => item.city === action.payload.city)) {
-        state.latest = state.latest.filter(
-          (item) => item.city !== action.payload.city
-        );
-      }
+    addLatest: (state, action: PayloadAction<ICity>) => {
+      state.latest = state.latest.filter(
+        (city) => city.name !== action.payload.name
+      );
+
       state.latest.push(action.payload);
     },
-    deleteFromLatest: (state, action: PayloadAction<string>) => {
-      state.latest = state.latest.filter((item) => item.id !== action.payload);
+    deleteFromLatest: (state, action: PayloadAction<ICity>) => {
+      state.latest = state.latest.filter(
+        (city) => city.id !== action.payload.id
+      );
     },
   },
 });

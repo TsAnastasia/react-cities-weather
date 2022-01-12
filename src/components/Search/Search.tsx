@@ -15,7 +15,7 @@ const Search = () => {
   const handleSearchSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     dispatch(setCity(value));
-    dispatch(addLatest({ city: value, id: Date() }));
+    dispatch(addLatest({ name: value, id: Date() }));
   };
 
   const handleClear = () => setValue("");
