@@ -15,7 +15,7 @@ const App = () => {
       <Header />
       <main className={styles.main}>
         <Intro />
-        <section>
+        <section className={styles.info}>
           <Search />
           {city && <Weather city={city} />}
         </section>
