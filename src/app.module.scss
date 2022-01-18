@@ -1,7 +1,6 @@
 .app {
   margin: 0 auto;
 
-  background: blue;
   border-radius: 10px;
 
   overflow: hidden;
@@ -14,4 +13,6 @@
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
+
+  background: blue;
 }

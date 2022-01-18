@@ -1,10 +1,12 @@
 import React from "react";
+
+import styles from "./app.module.scss";
+import Footer from "./components/Footer/Footer";
+import Header from "./components/Header/Header";
 import Intro from "./components/Intro/Intro";
 import Search from "./components/Search/Search";
 import Weather from "./components/Weather/Weather";
 import { useAppSelector } from "./hooks/redux";
-import styles from "./app.module.scss";
-import Header from "./components/Header/Header";
 
 const App = () => {
   const { city } = useAppSelector((state) => state.cityReducer);
@@ -18,7 +20,7 @@ const App = () => {
           {city && <Weather city={city} />}
         </section>
       </main>
-      <footer>footer</footer>
+      <Footer />
     </div>
   );
 };
