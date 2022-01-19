@@ -7,12 +7,23 @@
   background-color: rgba(148, 187, 233, 1);
   background-image: linear-gradient(
     60deg,
-    rgba(238, 174, 202, 1) 0%,
-    rgba(206, 179, 213, 1) 20%,
-    rgba(148, 187, 233, 1) 100%
+    #ceb3d5 0%,
+    #eeaeca 20%,
+    #94bbe9 100%
   );
 
   display: flex;
   justify-content: stretch;
   align-items: center;
+}
+
+.colors {
+  --text: #2a86f0;
+  --copyright: #584158;
+  --aspect: #adff2f;
+  --second: #fff93c;
+  --blackout: rgba(194, 194, 194, 0.5);
+  --background-first: #ceb3d5;
+  --background-middle: #eeaeca;
+  --background-last: #94bbe9;
 }
