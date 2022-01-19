@@ -1,0 +1,48 @@
+.box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.box:hover {
+  .value {
+    color: #adff2f;
+    border-color: #adff2f;
+  }
+
+  .delete {
+    background-image: url("../../images/icons/deleteHover.svg");
+  }
+}
+
+.value {
+  padding: 0 4px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 120%;
+
+  color: #2a86f0;
+  outline: 0;
+  border: 0;
+  border: 1px solid #2a86f0;
+  border-radius: 4px;
+  background: transparent;
+}
+
+.delete {
+  margin-left: 2px;
+  padding: 0;
+  width: 8px;
+  height: 8px;
+
+  outline: 0;
+  border: 0;
+  border-radius: 0;
+  background-color: transparent;
+  background-image: url("../../images/icons/delete.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

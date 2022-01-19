@@ -1,0 +1,14 @@
+.latest {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.item {
+  margin: 4px 10px 4px 0;
+}

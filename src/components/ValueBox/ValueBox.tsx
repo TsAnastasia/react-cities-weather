@@ -1,4 +1,5 @@
 import React, { FC } from "react";
+import styles from "./valueBox.module.scss";
 
 const ValueBox: FC<{
   value: string;
@@ -6,13 +7,11 @@ const ValueBox: FC<{
   onDelete: () => void;
 }> = ({ value, onClick, onDelete }) => {
   return (
-    <div>
-      <button type="button" onClick={onClick}>
+    <div className={styles.box}>
+      <button type="button" onClick={onClick} className={styles.value}>
         {value}
       </button>
-      <button type="button" onClick={onDelete}>
-        delete
-      </button>
+      <button type="button" onClick={onDelete} className={styles.delete} />
     </div>
   );
 };
