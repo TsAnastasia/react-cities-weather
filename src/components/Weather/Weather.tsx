@@ -21,7 +21,9 @@ const Weather: FC<{ city: string }> = ({ city }) => {
     <WeatherInfo
       city={data.name}
       country={data.sys.country}
+      iconId={data.weather[0].icon}
       temp={data.main.temp}
+      description={data.weather[0].description}
       pressure={data.main.pressure}
       sunrise={formatNumberToDayTime(data.sys.sunrise)}
       sunset={formatNumberToDayTime(data.sys.sunset)}

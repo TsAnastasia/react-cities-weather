@@ -7,13 +7,33 @@ export type WeatherGroupType =
   | "Clear"
   | "Clouds";
 
+export type WeatherIconCodes =
+  | "01d"
+  | "01n"
+  | "02d"
+  | "02n"
+  | "03d"
+  | "03n"
+  | "04d"
+  | "04n"
+  | "09d"
+  | "09n"
+  | "10d"
+  | "10n"
+  | "11d"
+  | "11n"
+  | "13d"
+  | "13n"
+  | "50d"
+  | "50n";
+
 export interface IWeather {
   coord: { lon: number; lat: number };
   weather: {
     id: 802;
     main: WeatherGroupType;
     description: string;
-    icon: string;
+    icon: WeatherIconCodes;
   }[];
   base: string;
   main: {
@@ -44,8 +64,13 @@ export interface IWeather {
 export interface IWeatherInfo {
   city: string;
   country: string;
+  iconId: WeatherIconCodes;
   temp: number;
-  pressure: number;
-  sunrise: string;
-  sunset: string;
+  description: string;
+  feels_like?: number;
+  pressure?: number;
+  wind?: number;
+  humidity?: number;
+  sunrise?: string;
+  sunset?: string;
 }

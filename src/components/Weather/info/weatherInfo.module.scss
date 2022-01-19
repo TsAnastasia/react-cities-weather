@@ -1,0 +1,47 @@
+.place {
+  margin: 10px 0 0;
+
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 120%;
+
+  text-shadow: 1px 0 0 #584158;
+  color: #2a86f0;
+}
+
+.short {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.shortInfo {
+  margin-left: 20px;
+  color: #584158;
+}
+
+.temp {
+  margin: 0;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+}
+
+.tempValue {
+  font-size: 28px;
+  font-weight: 900;
+  text-shadow: 1px 0 0 #584158;
+  color: #2a86f0;
+}
+
+.desc {
+  margin: 10px 0 0;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+}
