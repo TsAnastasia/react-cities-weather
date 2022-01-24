@@ -1,13 +1,32 @@
 import React from "react";
 
-const App = () => (
-  <div className="App">
-    <header>header</header>
-    <main>
-      <h1>react city's weather</h1>
-    </main>
-    <footer>footern</footer>
-  </div>
-);
+import styles from "./app.module.scss";
+import Footer from "./components/Footer/Footer";
+import Header from "./components/Header/Header";
+import Intro from "./components/Intro/Intro";
+import Search from "./components/Search/Search";
+import Weather from "./components/Weather/Weather";
+import { useAppSelector } from "./hooks/redux";
+
+const App = () => {
+  const { city } = useAppSelector((state) => state.cityReducer);
+  return (
+    <div className={styles.app}>
+      <Header />
+      <main className={styles.main}>
+        <Intro />
+        <section className={styles.info}>
+          <Search />
+          {city ? (
+            <Weather city={city} />
+          ) : (
+            <p className={styles.start}>Enter city, please</p>
+          )}
+        </section>
+      </main>
+      <Footer />
+    </div>
+  );
+};
 
 export default App;

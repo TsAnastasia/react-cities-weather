@@ -1,0 +1,24 @@
+.footer {
+  padding: 5px 15px;
+  background-image: linear-gradient(60deg, #eeaeca 0%, #94bbe9 100%);
+}
+
+.copyright {
+  margin: 0;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 120%;
+  color: #584158;
+}
+
+.author {
+  color: inherit;
+  text-decoration: none;
+}
+
+.author:hover {
+  text-decoration: underline;
+  opacity: 0.8;
+}
