@@ -1,4 +1,5 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { weatherAPI } from "../API/weatherAPI";
 import { ICity } from "../types/city";
 
 const initialState = {
@@ -25,6 +26,17 @@ export const citySlice = createSlice({
         (city) => city.id !== action.payload.id
       );
     },
+  },
+  extraReducers: (builder) => {
+    builder.addMatcher(
+      weatherAPI.endpoints.getWeatherByCity.matchFulfilled,
+      (state, action) => {
+        const city = `${action.payload.name}, ${action.payload.sys.country}`;
+        state.latest = state.latest.filter((c) => c.name !== city);
+
+        state.latest.push({ name: city, id: Date() });
+      }
+    );
   },
 });
 

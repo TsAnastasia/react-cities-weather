@@ -1,6 +1,6 @@
 import React, { FormEvent } from "react";
 import { useAppDispatch } from "../../hooks/redux";
-import { addLatest, setCity } from "../../redux/citySlice";
+import { setCity } from "../../redux/citySlice";
 import SearchLatest from "./latest/SearchLatest";
 import styles from "./search.module.scss";
 
@@ -16,7 +16,7 @@ const Search = () => {
   const handleSearchSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     dispatch(setCity(value));
-    dispatch(addLatest({ name: value, id: Date() }));
+    // dispatch(addLatest({ name: value, id: Date() }));
   };
 
   const handleClear = () => setValue("");
