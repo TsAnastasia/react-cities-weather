@@ -28,13 +28,14 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 120%;
+  color: #2a86f0;
 }
 
 .tempValue {
   font-size: 28px;
   font-weight: 900;
   text-shadow: 1px 0 0 #584158;
-  color: #2a86f0;
+  // color: #2a86f0;
 }
 
 .desc {
@@ -44,4 +45,53 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 120%;
+}
+
+.properties {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.property {
+  display: grid;
+  grid-template: "icon name" auto "icon value" / auto 1fr;
+}
+
+.icon {
+  margin-right: 10px;
+
+  grid-area: icon;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.name {
+  margin: 0;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  color: #584158;
+
+  grid-area: name;
+}
+
+.value {
+  margin: 0;
+
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 120%;
+  color: #2a86f0;
+
+  grid-area: value;
 }

@@ -67,10 +67,10 @@ export interface IWeatherInfo {
   iconId: WeatherIconCodes;
   temp: number;
   description: string;
-  feels_like?: number;
-  pressure?: number;
-  wind?: number;
-  humidity?: number;
+  feels_like?: string;
+  pressure?: string;
+  wind?: string;
+  humidity?: string;
   sunrise?: string;
   sunset?: string;
 }

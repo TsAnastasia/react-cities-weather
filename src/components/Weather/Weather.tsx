@@ -24,7 +24,10 @@ const Weather: FC<{ city: string }> = ({ city }) => {
       iconId={data.weather[0].icon}
       temp={data.main.temp}
       description={data.weather[0].description}
-      pressure={data.main.pressure}
+      feels_like={`${data.main.feels_like}`}
+      pressure={`${data.main.pressure} hPa`}
+      wind={`${data.wind.speed} m/s`}
+      humidity={`${data.main.humidity} %`}
       sunrise={formatNumberToDayTime(data.sys.sunrise)}
       sunset={formatNumberToDayTime(data.sys.sunset)}
     />

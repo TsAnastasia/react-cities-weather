@@ -1,11 +1,11 @@
 import React, { FC } from "react";
 import { IWeatherInfo } from "../../../types/weather";
+import PropertyIcon from "../../PropertyIcon/PropertyIcon";
 import WeatherIcon from "../../WeatherIcon/WeatherIcon";
 
 import styles from "./weatherInfo.module.scss";
 
 const infoItems: { key: keyof IWeatherInfo; title: string }[] = [
-  { key: "temp", title: "Temperature" },
   { key: "feels_like", title: "Feels like" },
   { key: "pressure", title: "Pressure" },
   { key: "wind", title: "Wind" },
@@ -29,12 +29,14 @@ const WeatherInfo: FC<IWeatherInfo> = (weather) => {
           <p className={styles.desc}>{weather.description}</p>
         </div>
       </div>
-      <ul>
+      <ul className={styles.properties}>
         {infoItems.map((item) => (
-          <li key={item.key}>
-            <p>
-              {item.title}: <span>{weather[item.key] || "?"}</span>
-            </p>
+          <li key={item.key} className={styles.property}>
+            <div className={styles.icon}>
+              <PropertyIcon type={item.key} />
+            </div>
+            <p className={styles.name}>{item.title}</p>
+            <p className={styles.value}>{weather[item.key] || "?"}</p>
           </li>
         ))}
       </ul>
