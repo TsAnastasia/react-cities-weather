@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/react-cities-weather/static/css/main.2531d7e3.css",
+    "main.js": "/react-cities-weather/static/js/main.8efce6f5.js",
+    "static/media/cover.png": "/react-cities-weather/static/media/cover.e294e8f5491da1f37f80.png",
+    "static/media/open-sans-all-400-normal.woff": "/react-cities-weather/static/media/open-sans-all-400-normal.fd1a30188fbba33c1971.woff",
+    "static/media/open-sans-cyrillic-ext-400-normal.woff2": "/react-cities-weather/static/media/open-sans-cyrillic-ext-400-normal.432abaf385d938750963.woff2",
+    "static/media/open-sans-latin-400-normal.woff2": "/react-cities-weather/static/media/open-sans-latin-400-normal.a2d02404d087c7c068d4.woff2",
+    "static/media/open-sans-latin-ext-400-normal.woff2": "/react-cities-weather/static/media/open-sans-latin-ext-400-normal.0950a0dbc206706736db.woff2",
+    "static/media/open-sans-cyrillic-400-normal.woff2": "/react-cities-weather/static/media/open-sans-cyrillic-400-normal.8c8b009e2308cfd36674.woff2",
+    "static/media/open-sans-greek-400-normal.woff2": "/react-cities-weather/static/media/open-sans-greek-400-normal.f4df5aa87d97ffdd65c4.woff2",
+    "static/media/open-sans-hebrew-400-normal.woff2": "/react-cities-weather/static/media/open-sans-hebrew-400-normal.c4e6d354894703317c0c.woff2",
+    "static/media/open-sans-vietnamese-400-normal.woff2": "/react-cities-weather/static/media/open-sans-vietnamese-400-normal.1970138327ca2599f2c5.woff2",
+    "static/media/open-sans-greek-ext-400-normal.woff2": "/react-cities-weather/static/media/open-sans-greek-ext-400-normal.7f0c7c378a3ca829b189.woff2",
+    "index.html": "/react-cities-weather/index.html",
+    "static/media/clear.svg": "/react-cities-weather/static/media/clear.d907d590627c9027a151.svg",
+    "static/media/delete.svg": "/react-cities-weather/static/media/delete.cfd0732535b789070859.svg",
+    "static/media/deleteHover.svg": "/react-cities-weather/static/media/deleteHover.821fa94e60194cca33e8.svg",
+    "main.2531d7e3.css.map": "/react-cities-weather/static/css/main.2531d7e3.css.map",
+    "main.8efce6f5.js.map": "/react-cities-weather/static/js/main.8efce6f5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2531d7e3.css",
+    "static/js/main.8efce6f5.js"
+  ]
+}
