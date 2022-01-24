@@ -1,22 +1,27 @@
 import { FetchBaseQueryError } from "@reduxjs/toolkit/dist/query";
 import React, { FC } from "react";
+
 import { weatherAPI } from "../../API/weatherAPI";
 import { formatNumberToDayTime } from "../../utils/date";
+import Loader from "../Loader/Loader";
 import WeatherInfo from "./info/WeatherInfo";
+import styles from "./weather.module.scss";
 
 const Weather: FC<{ city: string }> = ({ city }) => {
-  const { data, isLoading, error } = weatherAPI.useGetWeatherByCityQuery(city);
+  const { data, error, isFetching } = weatherAPI.useGetWeatherByCityQuery(city);
 
-  return isLoading ? (
-    <p>Loading ...</p>
+  return isFetching ? (
+    <Loader />
   ) : !!error ? (
     ((error as FetchBaseQueryError).data as any).message ? (
-      <p>{((error as FetchBaseQueryError).data as any).message}</p>
+      <p className={styles.error}>
+        {((error as FetchBaseQueryError).data as any).message}
+      </p>
     ) : (
-      <p>API error {}</p>
+      <p className={styles.error}>API error {}</p>
     )
   ) : !data ? (
-    <p>no data</p>
+    <p className={styles.error}>no data</p>
   ) : (
     <WeatherInfo
       city={data.name}

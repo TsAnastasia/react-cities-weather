@@ -1,8 +1,8 @@
 import React, { FC } from "react";
+
 import { IWeatherInfo } from "../../../types/weather";
 import PropertyIcon from "../../PropertyIcon/PropertyIcon";
 import WeatherIcon from "../../WeatherIcon/WeatherIcon";
-
 import styles from "./weatherInfo.module.scss";
 
 const infoItems: { key: keyof IWeatherInfo; title: string }[] = [
@@ -16,7 +16,7 @@ const infoItems: { key: keyof IWeatherInfo; title: string }[] = [
 
 const WeatherInfo: FC<IWeatherInfo> = (weather) => {
   return (
-    <>
+    <div className={styles.info}>
       <h2 className={styles.place}>
         <span>{weather.city}</span>, <span>{weather.country}</span>
       </h2>
@@ -40,7 +40,7 @@ const WeatherInfo: FC<IWeatherInfo> = (weather) => {
           </li>
         ))}
       </ul>
-    </>
+    </div>
   );
 };
 

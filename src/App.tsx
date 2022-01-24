@@ -17,7 +17,11 @@ const App = () => {
         <Intro />
         <section className={styles.info}>
           <Search />
-          {city && <Weather city={city} />}
+          {city ? (
+            <Weather city={city} />
+          ) : (
+            <p className={styles.start}>Enter city, please</p>
+          )}
         </section>
       </main>
       <Footer />

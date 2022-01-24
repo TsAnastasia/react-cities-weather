@@ -2,7 +2,7 @@ import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { ICity } from "../types/city";
 
 const initialState = {
-  city: "moscow" as string | null,
+  city: "" as string | null,
   latest: [] as ICity[],
 };
 
