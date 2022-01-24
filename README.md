@@ -1,9 +1,9 @@
 # City's weather app
 
-Find out weather in your city.
+Find out weather in your city. [Try](https://tsanastasia.github.io/react-cities-weather).
 
 Used open Weather API:
-[https://openweathermap.org/current].
+https://openweathermap.org/current.
 
 Author: [Anastasia Tsibernaya](https://github.com/TsAnastasia), 2022.
 
