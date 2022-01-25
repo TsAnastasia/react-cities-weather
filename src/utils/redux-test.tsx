@@ -7,7 +7,7 @@ import { rootReducer, RootState } from "../redux/store";
 
 export const renderWithRedux = (
   component: ReactElement,
-  storeOptions?: { preloadedState: RootState; store?: any },
+  storeOptions?: { preloadedState: Partial<RootState>; store?: any },
   renderOptions?: RenderOptions
 ) => {
   const testStore = storeOptions?.store
