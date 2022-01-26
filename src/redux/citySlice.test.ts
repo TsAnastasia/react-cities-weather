@@ -1,4 +1,5 @@
 import { AnyAction } from "@reduxjs/toolkit";
+
 import { ICity } from "../types/city";
 import reducer, { setCity, addLatest, deleteFromLatest } from "./citySlice";
 
