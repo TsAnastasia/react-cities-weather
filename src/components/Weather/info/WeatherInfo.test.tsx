@@ -13,7 +13,6 @@ describe("Weather Info", () => {
         description={"cloudy"}
       />
     );
-    screen.debug();
 
     expect(screen.getByRole("heading", { level: 2 })).toHaveTextContent(
       /test city/
@@ -43,7 +42,6 @@ describe("Weather Info", () => {
         humidity="75 %"
       />
     );
-    screen.debug();
 
     expect(screen.getByRole("heading", { level: 2 })).toHaveTextContent(
       /test city/
@@ -76,7 +74,6 @@ describe("Weather Info", () => {
         sunset="17:58"
       />
     );
-    screen.debug();
 
     expect(screen.getByRole("heading", { level: 2 })).toHaveTextContent(
       /test city/

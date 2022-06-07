@@ -26,7 +26,7 @@ describe("Search", () => {
       },
     });
 
-    expect(screen.queryByRole("textbox")).toBeInTheDocument();
+    expect(screen.getByRole("textbox")).toBeInTheDocument();
     expect(screen.getByRole("list")).toBeInTheDocument();
   });
 
