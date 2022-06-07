@@ -13,12 +13,10 @@ import storage from "redux-persist/lib/storage";
 import { weatherAPI } from "../API/weatherAPI";
 import cityReducer from "./citySlice";
 
-const rootReducer = combineReducers({
+export const rootReducer = combineReducers({
   cityReducer,
   [weatherAPI.reducerPath]: weatherAPI.reducer,
 });
-
-console.log("cityReducer.name", cityReducer.name);
 
 const perisitConfig = {
   key: "root",
