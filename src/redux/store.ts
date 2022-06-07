@@ -18,8 +18,6 @@ export const rootReducer = combineReducers({
   [weatherAPI.reducerPath]: weatherAPI.reducer,
 });
 
-console.log("cityReducer.name", cityReducer.name);
-
 const perisitConfig = {
   key: "root",
   storage,
