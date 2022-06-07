@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-cities-weather/static/css/main.2531d7e3.css",
-    "main.js": "/react-cities-weather/static/js/main.8efce6f5.js",
+    "main.css": "/react-cities-weather/static/css/main.3d29bd43.css",
+    "main.js": "/react-cities-weather/static/js/main.a4e14f7b.js",
     "static/media/cover.png": "/react-cities-weather/static/media/cover.e294e8f5491da1f37f80.png",
     "static/media/open-sans-all-400-normal.woff": "/react-cities-weather/static/media/open-sans-all-400-normal.fd1a30188fbba33c1971.woff",
     "static/media/open-sans-cyrillic-ext-400-normal.woff2": "/react-cities-weather/static/media/open-sans-cyrillic-ext-400-normal.432abaf385d938750963.woff2",
@@ -16,11 +16,11 @@
     "static/media/clear.svg": "/react-cities-weather/static/media/clear.d907d590627c9027a151.svg",
     "static/media/delete.svg": "/react-cities-weather/static/media/delete.cfd0732535b789070859.svg",
     "static/media/deleteHover.svg": "/react-cities-weather/static/media/deleteHover.821fa94e60194cca33e8.svg",
-    "main.2531d7e3.css.map": "/react-cities-weather/static/css/main.2531d7e3.css.map",
-    "main.8efce6f5.js.map": "/react-cities-weather/static/js/main.8efce6f5.js.map"
+    "main.3d29bd43.css.map": "/react-cities-weather/static/css/main.3d29bd43.css.map",
+    "main.a4e14f7b.js.map": "/react-cities-weather/static/js/main.a4e14f7b.js.map"
   },
   "entrypoints": [
-    "static/css/main.2531d7e3.css",
-    "static/js/main.8efce6f5.js"
+    "static/css/main.3d29bd43.css",
+    "static/js/main.a4e14f7b.js"
   ]
 }
