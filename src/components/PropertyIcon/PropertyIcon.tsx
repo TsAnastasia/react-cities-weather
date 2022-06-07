@@ -40,18 +40,18 @@ const PropertyIcon: FC<{ type: keyof IWeatherInfo; color?: string }> = ({
           <path
             d="M24.923 22.26v12.261M31.054 28.39l-6.13 6.131-6.13-6.13"
             stroke={color}
-            stroke-width="2"
-            stroke-miterlimit="10"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="2"
+            strokeMiterlimit="10"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
           <path
             d="M29.98 10c-7.049 0-13.026 5.057-14.559 11.954h-1.226C9.138 21.954 5 26.092 5 31.303c0 3.525 1.992 6.59 4.751 8.275 1.38.614 2.759 1.073 4.444 1.073H29.981C38.257 40.651 45 33.755 45 25.326 45 16.896 38.103 10 29.98 10Z"
             stroke={color}
-            stroke-width="2"
-            stroke-miterlimit="10"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="2"
+            strokeMiterlimit="10"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
         </svg>
       );
